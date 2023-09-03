@@ -16,7 +16,7 @@ export default function App({ Component, pageProps }) {
         <meta name="googlebot" content="folow, index"/>
         <meta name="supported-media" content="only screen and (max-width: 1280px)"/>
         <link rel="icon" href="/favicon.ico" />
-        {/* <script type="application/ld+json">
+        <script type="application/ld+json">
     {`
       "@context" : "https://framestudio.in",
       "@type" : "WebSite",
@@ -26,7 +26,7 @@ export default function App({ Component, pageProps }) {
       "url" : "https://framestudio.in/"
       }
     `}
-  </script> */}
+  </script>
       </Head>
       <AuthGuard>
         <Component {...pageProps} />
