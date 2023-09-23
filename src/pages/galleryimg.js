@@ -2,18 +2,18 @@ import Navbar from "../components/navbar";
 
 import dynamic from "next/dynamic";
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
+// import Image from "next/image";
 import Head from "next/head";
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
-// import Gallery from "react-photo-gallery";
+// import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import Gallery from "react-photo-gallery";
 
 import styles from "../styles/home.module.css";
 
 import { BsArrowBarLeft } from "react-icons/bs";
 
-export default dynamic(() => Promise.resolve(Gallery), { ssr: false });
+export default dynamic(() => Promise.resolve(Galleryimg), { ssr: false });
 
-const Gallery = () => {
+const Galleryimg = () => {
   // image view component
 
 
@@ -38,17 +38,60 @@ const Gallery = () => {
 //   };
 
 const photos = [
-   imgs.map((item)=>{
-    return(
-        {
-            src: item.thumbnail,
-            width: item.width,
-            height: item.height,
-            alt: item.name,
-        }
-    )
-   })
+  {
+    src: 'https://images.pexels.com/photos/18280489/pexels-photo-18280489/free-photo-of-light-black-and-white-city-road.jpeg',
+    width: 1,
+    height: 3,
+  },
+  {
+    src: 'https://images.pexels.com/photos/18280489/pexels-photo-18280489/free-photo-of-light-black-and-white-city-road.jpeg',
+    width: 1,
+    height: 1,
+  },
+  {
+    src: 'https://images.pexels.com/photos/18280489/pexels-photo-18280489/free-photo-of-light-black-and-white-city-road.jpeg',
+    width: 2,
+    height: 1,
+  },
+  {
+    src: 'https://images.pexels.com/photos/18280489/pexels-photo-18280489/free-photo-of-light-black-and-white-city-road.jpeg',
+    width: 1,
+    height: 3,
+  },
+  {
+    src: 'https://images.pexels.com/photos/18280489/pexels-photo-18280489/free-photo-of-light-black-and-white-city-road.jpeg',
+    width: 5,
+    height: 1,
+  },
+  {
+    src: 'https://images.pexels.com/photos/18280489/pexels-photo-18280489/free-photo-of-light-black-and-white-city-road.jpeg',
+    width: 2,
+    height: 5,
+  },
+  {
+    src: 'https://images.pexels.com/photos/18280489/pexels-photo-18280489/free-photo-of-light-black-and-white-city-road.jpeg',
+    width: 2,
+    height: 1,
+  },
+  {
+    src: 'https://images.pexels.com/photos/18280489/pexels-photo-18280489/free-photo-of-light-black-and-white-city-road.jpeg',
+    width: 2,
+    height: 5,
+  },
 ]
+
+// const photos = [
+//    imgs.map((item)=>{
+//     return(
+//         {
+//             src: item.thumbnail,
+//             width: item.width,
+//             height: item.height,
+//             alt: item.name,
+//         }
+//     )
+//    })
+// ]
 
 
   return (
@@ -60,6 +103,7 @@ const photos = [
       <Navbar />
       <div className={styles.masonrymainbody}>
       <Gallery photos={photos} />
+      gallery
       </div>
     </>
   );
