@@ -1,4 +1,6 @@
 import "../styles/globals.css";
+import "react-image-gallery/styles/css/image-gallery.css";
+
 import Head from "next/head";
 
 import { AuthGuard } from "../components/context";
