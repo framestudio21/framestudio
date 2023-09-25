@@ -5,8 +5,10 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Head from "next/head";
 // import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
-// import Gallery from "react-photo-gallery";
+import Gallery from "react-photo-gallery";
 import ImageGallery from "react-image-gallery";
+import PhotoAlbum from "react-photo-album"
+
 
 import styles from "../styles/home.module.css";
 
@@ -18,10 +20,10 @@ const Galleryimg = () => {
   // image view component
 
 
-//   const [data, setData] = useState({});
-//   const viewImage = (item) => {
-//     setData(item);
-//   };
+  const [data, setData] = useState({});
+  const viewImage = (item) => {
+    setData(item);
+  };
 
   const [imgs, setImgs] = useState([]);
   useEffect(() => {
@@ -34,104 +36,38 @@ const Galleryimg = () => {
 
   // close button
 
-//   const close = () => {
-//     setData({});
-//   };
+  const close = () => {
+    setData({});
+  };
 
-// const photos = [
-//   {
-//     src: 'https://images.pexels.com/photos/18280489/pexels-photo-18280489/free-photo-of-light-black-and-white-city-road.jpeg',
-//     width: 1,
-//     height: 3,
-//   },
-//   {
-//     src: 'https://images.pexels.com/photos/18280489/pexels-photo-18280489/free-photo-of-light-black-and-white-city-road.jpeg',
-//     width: 1,
-//     height: 1,
-//   },
-//   {
-//     src: 'https://images.pexels.com/photos/18280489/pexels-photo-18280489/free-photo-of-light-black-and-white-city-road.jpeg',
-//     width: 2,
-//     height: 1,
-//   },
-//   {
-//     src: 'https://images.pexels.com/photos/18280489/pexels-photo-18280489/free-photo-of-light-black-and-white-city-road.jpeg',
-//     width: 1,
-//     height: 3,
-//   },
-//   {
-//     src: 'https://images.pexels.com/photos/18280489/pexels-photo-18280489/free-photo-of-light-black-and-white-city-road.jpeg',
-//     width: 5,
-//     height: 1,
-//   },
-//   {
-//     src: 'https://images.pexels.com/photos/18280489/pexels-photo-18280489/free-photo-of-light-black-and-white-city-road.jpeg',
-//     width: 2,
-//     height: 5,
-//   },
-//   {
-//     src: 'https://images.pexels.com/photos/18280489/pexels-photo-18280489/free-photo-of-light-black-and-white-city-road.jpeg',
-//     width: 2,
-//     height: 1,
-//   },
-//   {
-//     src: 'https://images.pexels.com/photos/18280489/pexels-photo-18280489/free-photo-of-light-black-and-white-city-road.jpeg',
-//     width: 2,
-//     height: 5,
-//   },
-// ]
+const photos = 
+   imgs.map((item)=>{
+    return(
+        {
+            src: item.thumbnail,
+            width: item.width,
+            height: item.height,
+            alt: item.name,
+            Key: item._id
+        }
+    )
+   })
 
-// const photos = [
-//    imgs.map((item)=>{
-//     return(
-//         {
-//             src: item.thumbnail,
-//             width: item.width,
-//             height: item.height,
-//             // alt: item.name,
-//             // Key: item._id
-//         }
-//     )
-//    })
-// ]
+   const images = 
+   imgs.map((item)=>{
+    return(
+        {
+            original: item.thumbnail,
+            thumbnail: item.thumbnail,
+            // width: item.width,
+            // height: item.height,
+            alt: item.name,
+            Key: item._id
+        }
+    )
+   })
 
-// const images = [
-//   {
-//     original: 'https://images.pexels.com/photos/18280489/pexels-photo-18280489/free-photo-of-light-black-and-white-city-road.jpeg',
-//     thumbnail: 'https://images.pexels.com/photos/18280489/pexels-photo-18280489/free-photo-of-light-black-and-white-city-road.jpeg',
-//   },
-//   {
-//     original: 'https://images.pexels.com/photos/18280489/pexels-photo-18280489/free-photo-of-light-black-and-white-city-road.jpeg',
-//     thumbnail: 'https://images.pexels.com/photos/18280489/pexels-photo-18280489/free-photo-of-light-black-and-white-city-road.jpeg',
-//   },
-//   {
-//     original: 'https://images.pexels.com/photos/18280489/pexels-photo-18280489/free-photo-of-light-black-and-white-city-road.jpeg',
-//     thumbnail: 'https://images.pexels.com/photos/18280489/pexels-photo-18280489/free-photo-of-light-black-and-white-city-road.jpeg',
-//   },
-//   {
-//     original: 'https://images.pexels.com/photos/18280489/pexels-photo-18280489/free-photo-of-light-black-and-white-city-road.jpeg',
-//     thumbnail: 'https://images.pexels.com/photos/18280489/pexels-photo-18280489/free-photo-of-light-black-and-white-city-road.jpeg',
-//   },
-//   {
-//     original: 'https://images.pexels.com/photos/18280489/pexels-photo-18280489/free-photo-of-light-black-and-white-city-road.jpeg',
-//     thumbnail: 'https://images.pexels.com/photos/18280489/pexels-photo-18280489/free-photo-of-light-black-and-white-city-road.jpeg',
-//   },
-// ]
-
-const images = [
-  imgs.map((item)=>{
-        return(
-            {
-                original: item.thumbnail,
-                thumbnail: item.thumbnail
-            }
-        )
-       })
-]
-
-
-console.log(images);
-  return (
+return (
     <>
            <Head>
       <title>GALLERY</title>
@@ -139,13 +75,18 @@ console.log(images);
     </Head>
       <Navbar />
       <div className={styles.masonrymainbody}>
-      {/* <Gallery photos={photos} /> */}
-      <ImageGallery items={images} />
+      {/* <Gallery layout="columns" photos={photos} /> */}
+      {/* <ImageGallery items={images} /> */}
+      <PhotoAlbum layout="columns" photos={photos} />
+      {/* <PhotoAlbum layout="rows" photos={photos} /> */}
       </div>
     </>
   );
 };
 
+
+
+// the width must be in the number of 5, 10, 15, 20, 25, 30 the height must be only 5. it's only in the gallery (react-photo-gallery)
 
 // {data.thumbnail && (
 //     <div className={styles.imagedisplaydiv} onClick={close}>
