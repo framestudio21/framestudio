@@ -1,10 +1,10 @@
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 
 import styles from "./styles/orderconfirmpop.module.css";
 
 import confettiicon from "../image/icon/Confetti.svg";
-import { Link } from "react-router-dom";
 
 export default function orderconfirmpop() {
   return (
@@ -176,32 +176,28 @@ export default function orderconfirmpop() {
           <div className={styles.header}>thanks for your order !</div>
 
           <div className={styles.paragraph1}>
-            thanks for placing order
-            <br/>
-            your order id no <span className={styles.ordernumber}>GD/2023/0023</span>
-            <br/>
-            we will send you a notification within 5 days when it's ready.
-            <br/>
-            we time to time connect with you for any queries.
+            <p className={styles.text1}>thanks for placing order</p>
+            <p className={styles.text2}>your order id no <span className={styles.ordernumber}>GD20230023</span></p>
+           <p className={styles.text3}>we will send you a notification within 5 days when it's ready.</p>
+           <p className={styles.text4}>we time to time connect with you for any queries.</p>
           </div>
 
           <div className={styles.paragraph2}>
             if you have any question or queries then feel free to get in contact us.
-            <br/>
-            <Link>
-            <button>Cotact us</button>
-            </Link>
+            {/* <br/> */}
+            {/* <Link href="/contact">
+            <button className={styles.contactbtn}>connect us</button>
+            </Link> */}
           </div>
 
-          <div className={styles.paragraph3}>all the best,</div>
-          <div className={styles.paragraph4}>powered by frame studio</div>
-       
+          {/* <div className={styles.paragraph3}>all the best,</div>        */}
 
         </div>
         <div className={styles.bottomsection}>
           <button className={styles.downloadbtn}>download pdf</button>
           <button className={styles.closebtn}>NO THANKS</button>
         </div>
+        <div className={styles.paragraph4}>powered by frame studio</div>
       </div>
     </>
   );
