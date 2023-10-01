@@ -7,8 +7,10 @@ import Head from "next/head";
 // import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import Gallery from "react-photo-gallery";
 import ImageGallery from "react-image-gallery";
-import PhotoAlbum from "react-photo-album"
+import PhotoAlbum from "react-photo-album";
 
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
 
 import styles from "../styles/home.module.css";
 
@@ -18,7 +20,6 @@ export default dynamic(() => Promise.resolve(Galleryimg), { ssr: false });
 
 const Galleryimg = () => {
   // image view component
-
 
   const [data, setData] = useState({});
   const viewImage = (item) => {
@@ -40,51 +41,52 @@ const Galleryimg = () => {
     setData({});
   };
 
-const photos = 
-   imgs.map((item)=>{
-    return(
-        {
-            src: item.thumbnail,
-            width: item.width,
-            height: item.height,
-            alt: item.name,
-            Key: item._id
-        }
-    )
-   })
+  const photos = imgs.map((item) => {
+    return {
+      src: item.thumbnail,
+      width: item.width,
+      height: item.height,
+      alt: item.name,
+      Key: item._id,
+    };
+  });
 
-   const images = 
-   imgs.map((item)=>{
-    return(
-        {
-            original: item.thumbnail,
-            thumbnail: item.thumbnail,
-            // width: item.width,
-            // height: item.height,
-            alt: item.name,
-            Key: item._id
-        }
-    )
-   })
+  const images = imgs.map((item) => {
+    return {
+      original: item.thumbnail,
+      thumbnail: item.thumbnail,
+      // width: item.width,
+      // height: item.height,
+      alt: item.name,
+      Key: item._id,
+    };
+  });
 
-return (
+  return (
     <>
-           <Head>
-      <title>GALLERY</title>
-      <meta name="description" content="Varities of Digital Art Designs and order item."/>
-    </Head>
+      <Head>
+        <title>GALLERY</title>
+        <meta
+          name="description"
+          content="Varities of Digital Art Designs and order item."
+        />
+      </Head>
       <Navbar />
-      <div className={styles.masonrymainbody}>
-      {/* <Gallery layout="columns" photos={photos} /> */}
-      {/* <ImageGallery items={images} /> */}
-      <PhotoAlbum layout="columns" photos={photos} />
-      {/* <PhotoAlbum layout="rows" photos={photos} /> */}
+      <div className={styles.gallerymainbody}>
+        {/* <Gallery photos={photos} /> */}
+        {/* <ImageGallery items={images} /> */}
+
+
+        <Zoom>
+          <PhotoAlbum layout="columns" photos={photos} />
+        </Zoom>
+
+        
+        {/* <PhotoAlbum layout="rows" photos={photos} /> */}
       </div>
     </>
   );
 };
-
-
 
 // the width must be in the number of 5, 10, 15, 20, 25, 30 the height must be only 5. it's only in the gallery (react-photo-gallery)
 
@@ -106,7 +108,8 @@ return (
 //     </div>
 //   )}
 
-{/* <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 600: 2, 800: 3, 900: 5 }}>
+{
+  /* <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 600: 2, 800: 3, 900: 5 }}>
           <Masonry columnsCount={5}>
             {imgs.map((item) => {
               return (
@@ -128,4 +131,5 @@ return (
               );
             })}
           </Masonry>
-        </ResponsiveMasonry> */}
+        </ResponsiveMasonry> */
+}

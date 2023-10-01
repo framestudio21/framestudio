@@ -80,6 +80,11 @@
   width: calc(100% - 60px);
   margin-left: 60px;
 }
+.gallerymainbody{
+  width: calc(100% - 60px);
+  margin-left: 60px;
+  padding: 20px;
+}
 /* image display div design */
 .imagedisplaydiv{
   width: calc(100vw - 60px);
