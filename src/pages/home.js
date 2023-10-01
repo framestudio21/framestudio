@@ -11,7 +11,8 @@ import styles from "../styles/home.module.css";
 import Navbar from "../components/navbar";
 import Feedbackpopup from "../components/feedbackpopup";
 import Footer from "../components/footer";
-import Preloader from "../components/preloader"
+import Preloader from "../components/preloader";
+import Orderconfirm from "../components/orderconfirmpop"
 
 
 export default dynamic(() => Promise.resolve(Home), { ssr: false });
@@ -48,7 +49,8 @@ const Home = () => {
     </script>
     </Head>
       <Navbar />
-    <Preloader/>
+    {/* <Preloader/> */}
+      <Orderconfirm/>
       <Feedbackpopup/>
       <Footer/>
 

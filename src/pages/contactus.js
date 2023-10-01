@@ -87,59 +87,69 @@ const Contactus = () => {
           <form className={styles.formdiv}>
             <div className={styles.blocks}>
               <div className={styles.inputfield}>
-                <label>first name</label>
-                <input type="text" name="firstname" placeholder="your first name"/>
+                {/* <label>first name</label> */}
+                <input type="text" className={styles.textinput} name="firstname" placeholder="your first name"/>
               </div>
               <div className={styles.inputfield}>
-                <label>Last name</label>
-                <input type="text" name="lastname" placeholder="your last name"/>
-              </div>
-            </div>
-            <div className={styles.blocks}>
-              <div className={styles.inputfield}>
-                <label>city</label>
-                <input type="text" name="city" placeholder="your city"/>
-              </div>
-              <div className={styles.inputfield}>
-                <label>Phone</label>
-                <input type="number" name="phone" placeholder="your phone"/>
+                {/* <label>Last name</label> */}
+                <input type="text" className={styles.textinput} name="lastname" placeholder="your last name"/>
               </div>
             </div>
             <div className={styles.blocks}>
               <div className={styles.inputfield}>
-                <label>email</label>
-                <input type="email" name="email" placeholder="your email"/>
+                {/* <label>city</label> */}
+                <input type="text" className={styles.textinput} name="city" placeholder="your city"/>
+              </div>
+              <div className={styles.inputfield}>
+                {/* <label>Phone</label> */}
+                <input type="number" className={styles.textinput} name="phone" placeholder="your phone"/>
               </div>
             </div>
             <div className={styles.blocks}>
               <div className={styles.inputfield}>
-                <label>subject</label>
-                <input type="text" name="subject" placeholder="subject"/>
+                {/* <label>email</label> */}
+                <input type="email" className={styles.textinput} name="email" placeholder="your email"/>
               </div>
             </div>
             <div className={styles.blocks}>
               <div className={styles.inputfield}>
-                <label>what the matter for your query ?</label>
+                {/* <label>subject</label> */}
+                <input type="text" className={styles.textinput} name="subject" placeholder="subject"/>
+              </div>
+            </div>
+            <div className={styles.radioblocks}>
+                <div className={styles.radiolabel}>what the matter for your query ?</div>
+              <div className={styles.inputfield}>
+                <div className={styles.radiodiv}>
                 <input type="radio" id="graphic-design" value="graphic-design" name="design"/>
-                <label for="graphic-design">Graphic Design</label>
+                <label className={styles.radioinputlabel} for="graphic-design">Graphic Design</label>
+                </div>
+                <div className={styles.radiodiv}>
                 <input type="radio" id="website-design" value="website-design" name="design"/>
-                <label for="website-design">Website Design</label>
+                <label className={styles.radioinputlabel} for="website-design">Website Design</label>
+                </div>
+                <div className={styles.radiodiv}>
                 <input type="radio" id="logo-design" value="logo-design" name="design"/>
-                <label for="logo-design">Logo Design</label>
+                <label className={styles.radioinputlabel} for="logo-design">Logo Design</label>
+                </div>
+                <div className={styles.radiodiv}>
                 <input type="radio" id="typography-design" value="typography-design" name="design"/>
-                <label for="typography-design">typography Design</label>
+                <label className={styles.radioinputlabel} for="typography-design">typography</label>
+                </div>
+                <div className={styles.radiodiv}>
                 <input type="radio" id="other-design" value="other-design" name="design"/>
-                <label for="other-design">other Design</label>
+                <label className={styles.radioinputlabel} for="other-design">other</label>
+                </div>
               </div>
             </div>
             <div className={styles.blocks}>
               <div className={styles.inputfield}>
-                <label>massage</label>
-                <textarea type="text" name="massage" placeholder="tell us about it . . ."/>
+                {/* <label>massage</label> */}
+                <textarea className={styles.textarea} type="text" name="massage" placeholder="tell us about it . . ."/>
               </div>
             </div>
             <div className={styles.btnblocks}>
-                <button className={styles.sendbtn}>send massage</button>
+                <button className={styles.sendbtn}>submit</button>
                 <button className={styles.resetbtn}>reset</button>
             </div>
           </form>
