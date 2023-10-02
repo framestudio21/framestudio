@@ -16,7 +16,7 @@ function Notenavbar() {
   return (
     <>
       <div className={styles.notenavbarbody}>
-            <button className={styles.icons}>
+            <button className={styles.plusicon}>
             <BsPatchPlus className={styles.icon} />
           </button>
         <div className={styles.iconsection}>

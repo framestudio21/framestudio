@@ -1,42 +1,68 @@
-.notenavbarbody{
-    position: fixed;
-    right: 20px;
-    background: rgba(255, 255, 255, 0.55);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    border-radius: 12px;
-    /* border: 1px solid rgba(255, 255, 255, 0.3); */
-    top: 100px;
+.notenavbarbody {
+  position: fixed;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.55);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 12px;
+  /* border: 1px solid rgba(255, 255, 255, 0.3); */
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 99;
+  padding: 20px;
+
+  & .iconsection {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    z-index: 99;
-    padding: 10px;
+    gap: 10px;
+  }
 
-    & .iconsection{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        }
+  & .icons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    background: none;
+    color: var(--black-color);
+    cursor: pointer;
+    /* font-size: 25px; */
+    border-radius: 12px;
+  }
+  & .plusicon {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    background: none;
+    color: var(--black-color);
+    cursor: none;
+    /* font-size: 25px; */
+    border-radius: 12px;
+  }
 
-        & .icons{
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            padding: 10px;
-            justify-content: center;
-            align-items: center;
-            border: none;
-            outline: none;
-            background: none;
-            color: var(--black-color);
-            cursor: pointer;
-            /* font-size: 25px; */
+  & .icon {
+    width: 25px;
+    height: 30px;
+  }
 
-            & .icon{
-                width: 25px;
-                height: 30px;
-            }
-    }
+  & .icons:hover {
+    background-color: var(--black-color);
+    color: var(--white-color);
+  }
+  & .icons:active{
+    background-color: var(--green-color);
+    transform: scale(0.95);
+    color: var(--black-color);
+  }
 }
