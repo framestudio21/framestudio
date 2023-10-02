@@ -195,7 +195,7 @@ export default function orderconfirmpop() {
         </div>
         <div className={styles.bottomsection}>
           <button className={styles.downloadbtn}>download pdf</button>
-          <button className={styles.closebtn}>NO THANKS</button>
+          <button className={styles.closebtn}>close</button>
         </div>
         <div className={styles.paragraph4}>powered by frame studio</div>
       </div>

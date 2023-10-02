@@ -50,7 +50,7 @@ const Home = () => {
     </Head>
       <Navbar />
     {/* <Preloader/> */}
-      <Orderconfirm/>
+      {/* <Orderconfirm/> */}
       <Feedbackpopup/>
       <Footer/>
 

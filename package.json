@@ -11,6 +11,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "caniuse-lite": "^1.0.30001541",
+    "framer-motion": "^10.16.4",
     "moment": "^2.29.4",
     "next": "^13.4.9",
     "prop-types": "^15.8.1",
