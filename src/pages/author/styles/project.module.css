@@ -1,0 +1,182 @@
+.projectmainbody{
+    width: calc(100vw - 60px);
+    margin-left: 60px;
+    position: relative;
+    background: #000;
+    /* padding: 60px 60px 20px 60px; */
+    /* display: flex;
+    flex-direction: column;
+    gap: 20px; */
+
+    /* close button */
+    .closebtn{
+        border: 2px solid var(--black-color);
+        outline: none;
+        background: none;
+        display: flex;
+        gap: 10px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 900;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 20px;
+        font-size: 20px;
+        position: absolute;
+        top: 10px;
+        left: 60px;
+        border-radius: 12px;
+    }
+    .closebtn:hover{
+        border: 2px solid var(--black-color);
+    }
+    .closebtn:active{
+        /* border: 2px solid var(--green-color); */
+        background: var(--black-color);
+        color: var(--white-color);
+    }
+
+   & .maindiv{
+    width: 90%;
+    background-color: var(--white-color);
+    /* height: 100vh; */
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: space-between;
+
+    & .headertext{
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 900;
+        letter-spacing: 3px;
+        font-size: 22px;
+    }
+
+    & .formdiv{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+       & .mandatoryinputdiv{
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            position: relative;
+            /* align-items: center; */
+
+           & .divleftside{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                position: relative;
+
+                .text{
+                    text-align: center;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    font-weight: 700;
+                    font-size: 18px;
+                }
+            }
+            & .divleftside::after{
+                position: absolute;
+            content: " ";
+            background: #000;
+            height: 100%;
+            width: 2px;
+            right: -20px;
+            top: 0;
+            border-radius: 20px;
+            }
+
+           & .divrightside{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+           & .inputfield{
+                padding: 15px 20px;
+                font-weight: 500;
+                letter-spacing: 2px;
+                text-transform: lowercase;
+                font-size: 12px;
+                outline: none;
+                border: 2px solid var(--charcoal-color);
+                border-radius: 10px;
+                /* border-bottom: 2px solid var(--black-color); */
+            }
+            & .inputfield::placeholder{
+                text-transform: uppercase;
+            }
+            & .inputfield:active{
+                border: 2px solid var(--green-color);
+            }
+        }
+        & .mandatoryinputdiv::after{
+            position: absolute;
+            content: " ";
+            background: #000;
+            width: 100%;
+            height: 2px;
+            bottom: -20px;
+            left: 0;
+            border-radius: 20px;
+        }
+
+        & .newaddinputdiv{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+
+            & .divclosebtn{
+                border: none;
+                outline: none;
+                background: none;
+                font-size: 40px;
+            }
+
+            & .textarea, .imagearea{
+                display: flex;
+                justify-content: space-between;
+                gap: 20px;
+
+                & .textareainputfield{
+                    min-width: 96%;
+                    /* max-width: 97%; */
+                    width: 100%;
+                    min-height: 150px;
+                    max-height: 250px;
+                    padding: 15px 20px;
+                    border-radius: 10px;
+                    border: 2px solid var(--charcoal-color);
+                    letter-spacing: 2px;
+                }
+                & .textareainputfield::placeholder{
+                    text-transform: uppercase;
+                }
+
+            }
+
+            & .imageinputfield{
+                width: 96%;
+                padding: 10px 20px;
+                border-radius: 10px;
+                border: 2px solid var(--charcoal-color);
+                letter-spacing: 2px;
+            }
+            & .imageinputfield::placeholder{
+                text-transform: uppercase;
+            }
+            
+        }
+    }
+   }
+}

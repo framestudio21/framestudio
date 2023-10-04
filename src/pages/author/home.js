@@ -11,61 +11,61 @@ function Home() {
   const data = [
     {
       src: "https://images.pexels.com/photos/18427938/pexels-photo-18427938/free-photo-of-autumn-mountains.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      title: "JA ICCHEE TAI -2023",
+      title: "JA ICCHEE TAI - 2023",
       description:
         "The fluidity and versatility of watercolors makes it uniquely suited to capturing different moods. Watercolors are full of life and very colorful. It not only adds a sense of artistry to a space but also makes it feel warm and homely. As application of watercolors is a hand crafted technique, it is very personal. The frames are thus created using watercolors as a primary medium with few digital elements to fit perfectly with our modern world. These frames are designed to transform the complete experience of a space by adding beauty and life.",
     },
     {
       src: "https://images.pexels.com/photos/18427938/pexels-photo-18427938/free-photo-of-autumn-mountains.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      title: "JA ICCHEE TAI -2023",
+      title: "JA ICCHEE TAI - 2023",
       description:
         "The fluidity and versatility of watercolors makes it uniquely suited to capturing different moods. Watercolors are full of life and very colorful. It not only adds a sense of artistry to a space but also makes it feel warm and homely. As application of watercolors is a hand crafted technique, it is very personal. The frames are thus created using watercolors as a primary medium with few digital elements to fit perfectly with our modern world. These frames are designed to transform the complete experience of a space by adding beauty and life.",
     },
     {
       src: "https://images.pexels.com/photos/18427938/pexels-photo-18427938/free-photo-of-autumn-mountains.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      title: "JA ICCHEE TAI -2023",
+      title: "JA ICCHEE TAI - 2023",
       description:
         "The fluidity and versatility of watercolors makes it uniquely suited to capturing different moods. Watercolors are full of life and very colorful. It not only adds a sense of artistry to a space but also makes it feel warm and homely. As application of watercolors is a hand crafted technique, it is very personal. The frames are thus created using watercolors as a primary medium with few digital elements to fit perfectly with our modern world. These frames are designed to transform the complete experience of a space by adding beauty and life.",
     },
     {
       src: "https://images.pexels.com/photos/18427938/pexels-photo-18427938/free-photo-of-autumn-mountains.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      title: "JA ICCHEE TAI -2023",
+      title: "JA ICCHEE TAI - 2023",
       description:
         "The fluidity and versatility of watercolors makes it uniquely suited to capturing different moods. Watercolors are full of life and very colorful. It not only adds a sense of artistry to a space but also makes it feel warm and homely. As application of watercolors is a hand crafted technique, it is very personal. The frames are thus created using watercolors as a primary medium with few digital elements to fit perfectly with our modern world. These frames are designed to transform the complete experience of a space by adding beauty and life.",
     },
     {
       src: "https://images.pexels.com/photos/18427938/pexels-photo-18427938/free-photo-of-autumn-mountains.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      title: "JA ICCHEE TAI -2023",
+      title: "JA ICCHEE TAI - 2023",
       description:
         "The fluidity and versatility of watercolors makes it uniquely suited to capturing different moods. Watercolors are full of life and very colorful. It not only adds a sense of artistry to a space but also makes it feel warm and homely. As application of watercolors is a hand crafted technique, it is very personal. The frames are thus created using watercolors as a primary medium with few digital elements to fit perfectly with our modern world. These frames are designed to transform the complete experience of a space by adding beauty and life.",
     },
     {
       src: "https://images.pexels.com/photos/18427938/pexels-photo-18427938/free-photo-of-autumn-mountains.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      title: "JA ICCHEE TAI -2023",
+      title: "JA ICCHEE TAI - 2023",
       description:
         "The fluidity and versatility of watercolors makes it uniquely suited to capturing different moods. Watercolors are full of life and very colorful. It not only adds a sense of artistry to a space but also makes it feel warm and homely. As application of watercolors is a hand crafted technique, it is very personal. The frames are thus created using watercolors as a primary medium with few digital elements to fit perfectly with our modern world. These frames are designed to transform the complete experience of a space by adding beauty and life.",
     },
     {
       src: "https://images.pexels.com/photos/18427938/pexels-photo-18427938/free-photo-of-autumn-mountains.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      title: "JA ICCHEE TAI -2023",
+      title: "JA ICCHEE TAI - 2023",
       description:
         "The fluidity and versatility of watercolors makes it uniquely suited to capturing different moods. Watercolors are full of life and very colorful. It not only adds a sense of artistry to a space but also makes it feel warm and homely. As application of watercolors is a hand crafted technique, it is very personal. The frames are thus created using watercolors as a primary medium with few digital elements to fit perfectly with our modern world. These frames are designed to transform the complete experience of a space by adding beauty and life.",
     },
     {
       src: "https://images.pexels.com/photos/18427938/pexels-photo-18427938/free-photo-of-autumn-mountains.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      title: "JA ICCHEE TAI -2023",
+      title: "JA ICCHEE TAI - 2023",
       description:
         "The fluidity and versatility of watercolors makes it uniquely suited to capturing different moods. Watercolors are full of life and very colorful. It not only adds a sense of artistry to a space but also makes it feel warm and homely. As application of watercolors is a hand crafted technique, it is very personal. The frames are thus created using watercolors as a primary medium with few digital elements to fit perfectly with our modern world. These frames are designed to transform the complete experience of a space by adding beauty and life.",
     },
     {
       src: "https://images.pexels.com/photos/18427938/pexels-photo-18427938/free-photo-of-autumn-mountains.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      title: "JA ICCHEE TAI -2023",
+      title: "JA ICCHEE TAI - 2023",
       description:
         "The fluidity and versatility of watercolors makes it uniquely suited to capturing different moods. Watercolors are full of life and very colorful. It not only adds a sense of artistry to a space but also makes it feel warm and homely. As application of watercolors is a hand crafted technique, it is very personal. The frames are thus created using watercolors as a primary medium with few digital elements to fit perfectly with our modern world. These frames are designed to transform the complete experience of a space by adding beauty and life.",
     },
     {
       src: "https://images.pexels.com/photos/18427938/pexels-photo-18427938/free-photo-of-autumn-mountains.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      title: "JA ICCHEE TAI -2023",
+      title: "JA ICCHEE TAI - 2023",
       description:
         "The fluidity and versatility of watercolors makes it uniquely suited to capturing different moods. Watercolors are full of life and very colorful. It not only adds a sense of artistry to a space but also makes it feel warm and homely. As application of watercolors is a hand crafted technique, it is very personal. The frames are thus created using watercolors as a primary medium with few digital elements to fit perfectly with our modern world. These frames are designed to transform the complete experience of a space by adding beauty and life.",
     },

@@ -60,11 +60,11 @@ const Digitalart = () => {
           </div>
         )}
 
-        <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 600: 2, 800: 3, 900: 5 }}>
+        <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 600: 2, 800: 3, 1020: 4, 1280: 5 }}>
           <Masonry columnsCount={5}>
             {imgs.map((item) => {
               return (
-                <div key={item._id}>
+                <div key={item._id} className={styles.imagecontainer}>
                   {item.thumbnail && (
                     <Image
                       src={item.thumbnail}

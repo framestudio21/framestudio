@@ -49,9 +49,9 @@ const navbar = () => {
                         loading='lazy'
                         />
                     </div>
-                    <div className={styles.adminuser}>
+                    {/* <div className={styles.adminuser}>
                     <FaUserCircle className={styles.hamburger} />
-                    </div>
+                    </div> */}
                 </div>
                 <div className={styles.navlist} id={display}>
                     <ul>

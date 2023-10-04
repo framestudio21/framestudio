@@ -77,12 +77,12 @@ const Galleryimg = () => {
         {/* <ImageGallery items={images} /> */}
 
 
-        <Zoom>
-          <PhotoAlbum layout="columns" photos={photos} />
-        </Zoom>
+        {/* <Zoom> */}
+          <PhotoAlbum layout="columns" spacing={5} photos={photos} />
+        {/* </Zoom> */}
 
         
-        {/* <PhotoAlbum layout="rows" photos={photos} /> */}
+        {/* <PhotoAlbum layout="rows" spacing={5} photos={photos} /> */}
       </div>
     </>
   );

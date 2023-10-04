@@ -63,8 +63,8 @@ const Photography = () => {
           </div>
         )}
 
-        <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 3, 900: 4 }}>
-          <Masonry columnsCount={4}>
+        <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 600: 2, 800: 3, 1020: 4, 1280: 5 }}>
+          <Masonry columnsCount={5}>
             {imgs.map((item) => {
               return (
                 <div  key={item._id}>
@@ -77,8 +77,8 @@ const Photography = () => {
                       width={0}
                       height={item.height}
                       onClick={() => viewImage(item)}
-                      loading="lazy"
-                      unoptimized
+                      // loading="lazy"
+                      optimized
                       // priority
                     />
                   )}
