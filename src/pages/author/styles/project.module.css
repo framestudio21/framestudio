@@ -198,22 +198,20 @@
                 justify-content: space-between;
                 align-items: center;
                 gap: 20px;
-
-                & .textareainputfield{
-                    min-width: 96%;
-                    /* max-width: 97%; */
-                    width: 100%;
-                    min-height: 150px;
-                    max-height: 250px;
-                    padding: 15px 20px;
-                    border-radius: 10px;
-                    border: 2px solid var(--charcoal-color);
-                    letter-spacing: 2px;
-                }
-                & .textareainputfield::placeholder{
-                    text-transform: uppercase;
-                }
-
+            }
+            & .textareainputfield{
+                min-width: 96%;
+                /* max-width: 97%; */
+                width: 100%;
+                min-height: 150px;
+                max-height: 250px;
+                padding: 15px 20px;
+                border-radius: 10px;
+                border: 2px solid var(--charcoal-color);
+                letter-spacing: 2px;
+            }
+            & .textareainputfield::placeholder{
+                text-transform: uppercase;
             }
 
             & .imageinputfield{

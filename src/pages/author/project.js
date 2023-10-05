@@ -1,5 +1,6 @@
 import React from 'react'
 import dynamic from 'next/dynamic';
+import $ from "jquery"
 import { BiLeftArrowCircle } from 'react-icons/bi';
 import { AiFillCloseCircle } from 'react-icons/ai';
 
@@ -20,6 +21,19 @@ import Adminnavbar from "../../components/adminnavbar"
 
 export default dynamic(() => Promise.resolve(Project), { ssr: false });
 function Project() {
+
+    // append function by jquery
+
+    var $newdiv = $( "<div className={styles.textarea}><textarea className={styles.textareainputfield} placeholder='enter your text' /><button><AiFillCloseCircle /></button></div>" ),
+        newdiv2 = document.createElement( "div" ),
+        existingdiv1 = document.getElementById( "newaddeddiv" );
+
+    $(document).ready(function(){
+        $ ('#textbtn').click(function(){
+            $("#newaddeddiv").append($newdiv, [ newdiv2, existingdiv1 ])
+        })
+    })
+
   return (
     <>
     <Adminnavbar/>
@@ -44,8 +58,8 @@ function Project() {
         </select>
     </div>
 
-        {/* graphic upload form
-        <form className={styles.formdiv}>
+         {/* graphic upload form */}
+       {/* <form className={styles.formdiv}>
             <div className={styles.header}>Graphic Design Upload Form</div>
             <div className={styles.mandatoryinputdiv}>
                 <div className={styles.divleftside}>
@@ -452,7 +466,7 @@ function Project() {
                 </div>
             </div>
 
-        <div className={styles.newaddinputdiv}>
+        <div className={styles.newaddinputdiv} id="newaddeddiv">
 
         <div className={styles.textarea}>
                 <textarea className={styles.textareainputfield} placeholder='enter blog description' />
@@ -472,7 +486,7 @@ function Project() {
                 </button>
             </div>
 
-            <div className={styles.imagearea}>
+            <div className={styles.textarea}>
                 <input type='text' className={styles.imageinputfield} placeholder='enter your image link' />
                 <button className={styles.divclosebtn}>
                     <AiFillCloseCircle />
@@ -497,22 +511,22 @@ function Project() {
             <BsPatchPlus className={styles.icon} />
           </button>
         <div className={styles.iconsection}>
-          <button className={styles.icons}>
+          <button className={styles.icons} id='textbtn'>
             <BsFillChatSquareTextFill className={styles.icon} />
           </button>
-          <button className={styles.icons}>
+          <button className={styles.icons} id='quotebtn'>
             <BsFillChatSquareQuoteFill className={styles.icon} />
           </button>
-          <button className={styles.icons}>
+          <button className={styles.icons} id='imagebtn'>
             <BsImages className={styles.icon} />
           </button>
-          <button className={styles.icons}>
+          <button className={styles.icons} id='headingbtn'>
             <BsCardHeading className={styles.icon} />
           </button>
-          <button className={styles.icons}>
+          <button className={styles.icons} id='listbtn'>
             <FaListUl className={styles.icon} />
           </button>
-          <button className={styles.icons}>
+          <button className={styles.icons} id='taskbtn'>
             <FaListAlt className={styles.icon} />
           </button>
         </div>
